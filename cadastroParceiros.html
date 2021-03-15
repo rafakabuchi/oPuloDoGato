@@ -111,10 +111,16 @@
             <fieldset class="border p-2 mb-5">
                 <legend class="legenda w-auto">Endereço</legend>
                 <div class="form-group row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-2">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="endereco">
-                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" maxlength="9" id="cep">
+                            <label for="cep">CEP</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="logradouro" readonly>
+                            <label for="logradouro">Rua</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-2">
@@ -123,65 +129,30 @@
                             <label for="numero">Número</label>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 col-md-3">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="complemento">
                             <label for="complemento">Complemento</label>
                         </div>
                     </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-4">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="bairro">
+                            <input type="text" class="form-control" id="bairro" readonly>
                             <label for="bairro">Bairro</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cidade">
-                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="localidade" readonly>
+                            <label for="localidade">Cidade</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-2">
                         <div class="form-floating mb-3">
-                            <select class="form-select" aria-label="Selecione o Estado">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
+                            <input type="text" class="form-control" id="uf" placeholder="Estado" readonly>
                             <label for="uf">UF</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cep">
-                            <label for="cep">CEP</label>
                         </div>
                     </div>
                 </div>
