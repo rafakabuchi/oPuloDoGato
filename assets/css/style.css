@@ -46,3 +46,29 @@
 	width: 100%;
 	height: 380px;
 }
+
+.crop {
+	height: 210px;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.banner {
+	width: 80%;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+body{
+	padding-bottom: 45px;
+}
+
+.anunciantes {
+	border: 3px solid #ffe02d;
+}
