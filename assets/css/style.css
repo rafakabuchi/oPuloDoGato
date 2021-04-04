@@ -85,3 +85,10 @@ body{
     border-radius: 3px;
     border: #51b05a solid 1px
 }
+
+.isDisabled {
+	color: currentColor;
+	cursor: not-allowed;
+	opacity: 0.5;
+	text-decoration: none;
+  }

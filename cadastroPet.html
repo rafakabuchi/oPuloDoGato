@@ -22,14 +22,15 @@
             <img src="./assets/favicon/favicon-32x32.png" alt="home" width="30" height="24"
                 class="d-inline-block align-top">
             <a class="navbar-brand mb-0 h1" href="index.html" title="home"> Pulo do Gato</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarToggler">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="cadastroPessoal.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="cadastroPessoal.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cadastro
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,7 +69,12 @@
                             style="background-image: url('./assets/img/avatar/pet')"><span
                                 class="d-none">foto</span></label>
                         <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="d-none">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input m-1" type="checkbox" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Perdido</label>
+                        </div>
                     </div>
+
                     <div class="col-12 col-md-10">
                         <div class="row form-group">
                             <div class="col-12 col-md-6">
@@ -149,15 +155,14 @@
                                 <div class="border rounded px-3 py-1">
                                     <p class="mb-0">Vacinado?</p>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="vacinacao"
-                                            id="vacinacaoSim" checked>
+                                        <input class="form-check-input" type="radio" name="vacinacao" id="vacinacaoSim"
+                                            checked>
                                         <label class="form-check-label" for="vacinacaoSim">
                                             Sim
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="vacinacao"
-                                            id="vacinacaoNao">
+                                        <input class="form-check-input" type="radio" name="vacinacao" id="vacinacaoNao">
                                         <label class="form-check-label" for="vacinacaoNao">
                                             Não
                                         </label>
@@ -168,15 +173,14 @@
                                 <div class="border rounded px-3 py-1">
                                     <p class="mb-0">Possui Chip?</p>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="chipNumeracao"
-                                            id="chipSim" checked>
+                                        <input class="form-check-input" type="radio" name="chipNumeracao" id="chipSim"
+                                            checked>
                                         <label class="form-check-label" for="chipSim">
                                             Sim
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="chipNumeracao"
-                                            id="chipNao">
+                                        <input class="form-check-input" type="radio" name="chipNumeracao" id="chipNao">
                                         <label class="form-check-label" for="chipNao">
                                             Não
                                         </label>
