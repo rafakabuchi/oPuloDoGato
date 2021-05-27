@@ -59,7 +59,7 @@
     <div class="container">
         <form class="pt-3 pb-5">
             <fieldset class="border p-2 mb-5">
-                <legend class="legenda w-auto">Parceiro</legend>
+                <legend class="legenda w-auto">Anúncio</legend>
                 <div class="row form-group">
                     <div class="col-12 col-md-2">
                         <label for="avatar" class="foto-avatar mt-md-4 mb-3"
@@ -69,98 +69,34 @@
                     </div>
                     <div class="col-12 col-md-10">
                         <div class="row form-group">
-                            <div class="col-12 col-md-8">
+                            <div class="col-12 col-md-12">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="nomeParceiro" name="nomeParceiro">
-                                    <label for="nomeParceiro">Nome</label>
+                                    <input type="text" class="form-control" id="tituloAnuncio" name="tituloAnuncio">
+                                    <label for="tituloAnuncio">Título</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">   
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="tel" id="dataInicio" name="dataInicio" class="form-control"
+                                        id="floatingInput">
+                                    <label for="dataInicio">Data de início</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="cpf-CNPJ" name="cpf-CNPJ">
-                                    <label for="cpf-CNPJ">CPF/CNPJ</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-12 col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="tel" id="celularParceiro" name="celularParceiro" class="form-control"
+                                    <input type="tel" class="form-control" id="dataTermino" name="dataTermino"
                                         id="floatingInput">
-                                    <label for="celularParceiro">Celular</label>
+                                    <label for="dataTermino">Data do término</label>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6">
+                            </div>                         
+                            <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="telefoneParceiro" name="telefoneParceiro"
-                                        id="floatingInput">
-                                    <label for="telefoneParceiro">Telefone</label>
+                                    <input type="text" class="form-control" id="valor" name="valor">
+                                    <label for="valor">Valor</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-12 col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="site">
-                                    <label for="site">Site</label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-floating mb-3">
-                                    <input type="emailParceiro" class="form-control" id="emailParceiro">
-                                    <label for="emailParceiro">Email</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset class="border p-2 mb-5">
-                <legend class="legenda w-auto">Endereço</legend>
-                <div class="form-group row">
-                    <div class="col-12 col-md-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" maxlength="9" id="cep">
-                            <label for="cep">CEP</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="logradouro" readonly>
-                            <label for="logradouro">Rua</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="numero">
-                            <label for="numero">Número</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-12 col-md-3">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="complemento">
-                            <label for="complemento">Complemento</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="bairro" readonly>
-                            <label for="bairro">Bairro</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="localidade" readonly>
-                            <label for="localidade">Cidade</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="uf" placeholder="Estado" readonly>
-                            <label for="uf">UF</label>
                         </div>
                     </div>
                 </div>
