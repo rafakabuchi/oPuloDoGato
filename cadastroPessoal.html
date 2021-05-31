@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Pulo do Gato</title>    
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 
 <body>
@@ -62,10 +62,11 @@
                 <legend class="legenda w-auto">Cliente</legend>
                 <div class="row form-group">
                     <div class="col-12 col-md-2">
-                        <label for="avatar" class="foto-avatar mt-md-4 mb-3"
-                            style="background-image: url('./assets/img/avatar/perfil-de-avatar-de-mulher-no-icone-redondo_24640-14042.jpg')"><span
-                                class="d-none">foto</span></label>
-                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="d-none">
+                        <label for="avatar" class="foto-avatar mt-md-4 mb-3">
+                            <img id="imagemPerfil" height="200" width="200" src='./assets/img/avatar/perfil-de-avatar-de-mulher-no-icone-redondo_24640-14042.jpg'></label>
+                            <span class="d-none">foto</span>
+                        </label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="d-none" onchange="carregarImagem(event)">
                     </div>
                     <div class="col-12 col-md-10">
                         <div class="row form-group">
@@ -85,25 +86,19 @@
                         <div class="row form-group">   
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="email" required>
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>   
-                            <div class="col-12 col-md-3">
-                                <div class="form-floating mb-3">
                                     <input type="tel" id="celular" name="celular" class="form-control"
                                         id="floatingInput" required>
                                     <label for="celular">Celular</label>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
                                     <input type="tel" class="form-control" id="telefone" name="telefone"
                                         id="floatingInput">
                                     <label for="telefone">Telefone</label>
                                 </div>
                             </div>                              
-                            <div class="col-12 col-md-2">
+                            <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
                                     <input type="date" class="form-control" data-date-end-date="0d" required>
                                     <label for="nascimento">Nascimento</label>
@@ -111,6 +106,12 @@
                             </div>
                         </div>                        
                         <div class="row form-group">  
+                            <div class="col-12 col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>   
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
                                     <input type="password" class="form-control" id="senha" required>
@@ -123,13 +124,12 @@
                                     <label for="repertirSenha">Repetir senha</label>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-4">   
+                            <!-- <div class="col-12 col-md-4">   
                                 <div class="form-floating mb-3">
                                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                                 <br/>                                    
                                 </div>
-                            </div>
-                                         
+                            </div> -->                                         
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="form-group row">
                     <div class="col-12 col-md-3">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="complemento" required>
+                            <input type="text" class="form-control" id="complemento">
                             <label for="complemento">Complemento</label>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
             </fieldset>
             <div class="row form-group">
                 <div class="col-12">
-                    <input type="submit" class="btn btn-warning mx-auto d-block" onclick="validarForm()">Salvar</input>
+                    <input type="submit" class="btn btn-warning mx-auto d-block" value="Cadastrar" onclick="validarForm()"></input>
                 </div>
             </div>
         </form>

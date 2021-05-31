@@ -47,6 +47,23 @@ function phoneMaskBrazil() {
     inputValue = inputValue.replace(/\D/g,'');
     inputValue = inputValue.replace(/(^\d{2})(\d)/,'($1) $2');
     inputValue = inputValue.replace(/(\d{4,5})(\d{4}$)/,'$1-$2');
-    
+
     element.value = inputValue;
-  }
+}
+
+function carregarImagem(event){
+    var arquivoSelecionado = event.target.files[0];
+    var imagem = document.getElementById("imagemPerfil");
+    var fileReader = new FileReader();
+
+    // Nome do arquivo
+    imagem.title = arquivoSelecionado.name;
+
+    // Carrega o src (caminho)
+    fileReader.onload = function(event) {
+        imagem.src = event.target.result;
+    };
+
+    // Faz a leitura do arquivo de imagem
+    fileReader.readAsDataURL(arquivoSelecionado);
+}

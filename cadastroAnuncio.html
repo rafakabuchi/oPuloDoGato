@@ -71,7 +71,7 @@
                         <div class="row form-group">
                             <div class="col-12 col-md-12">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="tituloAnuncio" name="tituloAnuncio">
+                                    <input type="text" class="form-control" id="tituloAnuncio" name="tituloAnuncio" required>
                                     <label for="tituloAnuncio">Título</label>
                                 </div>
                             </div>
@@ -80,20 +80,20 @@
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
                                     <input type="tel" id="dataInicio" name="dataInicio" class="form-control"
-                                        id="floatingInput">
+                                        id="floatingInput" required>
                                     <label for="dataInicio">Data de início</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
                                     <input type="tel" class="form-control" id="dataTermino" name="dataTermino"
-                                        id="floatingInput">
+                                        id="floatingInput" required>
                                     <label for="dataTermino">Data do término</label>
                                 </div>
                             </div>                         
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="valor" name="valor">
+                                    <input type="text" class="form-control" id="valor" name="valor" readonly>
                                     <label for="valor">Valor</label>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
 
             <div class="row form-group">
                 <div class="col-12">
-                    <button type="button" class="btn btn-warning mx-auto d-block">Salvar</button>
+                    <input type="submit" class="btn btn-warning mx-auto d-block" value="Cadastrar"></input>
                 </div>
             </div>
         </form>

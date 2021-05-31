@@ -71,13 +71,13 @@
                         <div class="row form-group">
                             <div class="col-12 col-md-8">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="nomeParceiro" name="nomeParceiro">
+                                    <input type="text" class="form-control" id="nomeParceiro" name="nomeParceiro" required>
                                     <label for="nomeParceiro">Nome</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="cpf-CNPJ" name="cpf-CNPJ">
+                                    <input type="text" class="form-control" id="cpf-CNPJ" name="cpf-CNPJ" required>
                                     <label for="cpf-CNPJ">CPF/CNPJ</label>
                                 </div>
                             </div>
@@ -86,14 +86,14 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-floating mb-3">
                                     <input type="tel" id="celularParceiro" name="celularParceiro" class="form-control"
-                                        id="floatingInput">
+                                        id="floatingInput" required>
                                     <label for="celularParceiro">Celular</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-floating mb-3">
                                     <input type="tel" class="form-control" id="telefoneParceiro" name="telefoneParceiro"
-                                        id="floatingInput">
+                                        id="floatingInput" required>
                                     <label for="telefoneParceiro">Telefone</label>
                                 </div>
                             </div>
@@ -101,13 +101,13 @@
                         <div class="row form-group">
                             <div class="col-12 col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="site">
+                                    <input type="text" class="form-control" id="site" required>
                                     <label for="site">Site</label>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="emailParceiro" class="form-control" id="emailParceiro">
+                                    <input type="emailParceiro" class="form-control" id="emailParceiro" required>
                                     <label for="emailParceiro">Email</label>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                 <div class="form-group row">
                     <div class="col-12 col-md-2">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" maxlength="9" id="cep">
+                            <input type="text" class="form-control" maxlength="9" id="cep" required>
                             <label for="cep">CEP</label>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-12 col-md-2">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="numero">
+                            <input type="text" class="form-control" id="numero" required>
                             <label for="numero">Número</label>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
 
             <div class="row form-group">
                 <div class="col-12">
-                    <button type="button" class="btn btn-warning mx-auto d-block">Salvar</button>
+                    <input type="submit" class="btn btn-warning mx-auto d-block" value="Cadastrar"></input>
                 </div>
             </div>
         </form>
