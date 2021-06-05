@@ -167,6 +167,28 @@ body {
     color: var(--color-text-secondary) !important;
 }
 
+[data-theme='dark'] #formContent {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme='dark'] #formFooter {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme='dark'] #txtUsuario {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+    border-color: var(--color-dark-secondary-border);
+}
+
+[data-theme='dark'] #txtSenha {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+    border-color: var(--color-dark-secondary-border);
+}
+
 /* 
 Bootstrap */
 [data-theme='dark'] .alert {
