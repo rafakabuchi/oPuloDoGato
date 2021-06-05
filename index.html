@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
 
     <title>Pulo do Gato</title>
 </head>
@@ -29,15 +31,19 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Cadastro
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" aria-disabled="true">
-                            <li><a class="dropdown-item" href="cadastroPessoal.html" aria-disabled="true">Cadastro Pessoal</a></li>
-                            <li><a class="dropdown-item" href="cadastroPet.html"  aria-disabled="true">Cadastro do Pet</a></li>
-                            <li><a class="dropdown-item" href="cadastroParceiros.html" aria-disabled="true">Cadastro do Parceiro</a></li>                            
-                            <li><a class="dropdown-item" href="cadastroAnuncio.html" aria-disabled="true">Cadastro do Anúncio</a></li>
+                            <li><a class="dropdown-item" href="cadastroPessoal.html" aria-disabled="true">Cadastro
+                                    Pessoal</a></li>
+                            <li><a class="dropdown-item" href="cadastroPet.html" aria-disabled="true">Cadastro do
+                                    Pet</a></li>
+                            <li><a class="dropdown-item" href="cadastroParceiros.html" aria-disabled="true">Cadastro do
+                                    Parceiro</a></li>
+                            <li><a class="dropdown-item" href="cadastroAnuncio.html" aria-disabled="true">Cadastro do
+                                    Anúncio</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -52,6 +58,14 @@
                         </ul>
                     </li>
                 </ul>
+
+                <div class="px-3" >
+                    <label class="switch">
+                        <input type="checkbox" id='switch-theme'>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
                 <form class="d-flex">
                     <a class="btn btn-warning" href="login.html">login</a>
                 </form>
@@ -246,6 +260,9 @@
             <small id="copyright">
                 &copy; ONG Pulo do Gato - Todos os Direitos Reservados.
             </small>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
         </div>
     </nav>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -257,6 +274,7 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
     <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/dark-mode.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
