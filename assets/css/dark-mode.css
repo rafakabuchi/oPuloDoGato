@@ -157,6 +157,11 @@ body {
     color: var(--color-text-secondary) !important;
 }
 
+[data-theme='dark'] .legenda {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+}
+
 /* 
 Bootstrap */
 [data-theme='dark'] .alert {
