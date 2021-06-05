@@ -534,7 +534,7 @@ Bootstrap */
 }
 
 input:checked+.slider {
-    background-color: var(--color-dark-primary);
+    background-color: var(--color-dark-secondary-border);
 }
 
 input:focus+.slider {
