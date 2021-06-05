@@ -1,8 +1,8 @@
 const btn = document.getElementById('switch-theme');
-let theme = localStorage.getItem('theme');
-console.log(theme);
 
 document.addEventListener("DOMContentLoaded", (e) => {
+     let theme = localStorage.getItem('theme');
+     console.log(theme); 
      if (theme == 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           document.getElementById("logo").src = "./assets/favicon/favicon-32x32 dark-mode.png";
@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
      }
 });
 
-btn.addEventListener('click', (e) => {     
+btn.addEventListener('click', (e) => {    
+     let theme = localStorage.getItem('theme');
+     console.log(theme); 
      if (theme == 'dark') {
           document.documentElement.removeAttribute('data-theme');
           document.getElementById("logo").src = "./assets/favicon/favicon-32x32.png";
