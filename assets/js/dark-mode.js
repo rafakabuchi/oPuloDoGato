@@ -5,10 +5,12 @@ btn.addEventListener('click',(e)=>{
      console.log(theme);
      if(theme == 'light' || theme ==''){
           document.documentElement.setAttribute('data-theme','dark');
+          document.getElementById("logo").src="./assets/favicon/favicon-32x32 dark-mode.png";
           localStorage.setItem('theme','dark');
      }
      else {
-          document.documentElement.removeAttribute('data-theme');
+          document.documentElement.removeAttribute('data-theme');          
+          document.getElementById("logo").src="./assets/favicon/favicon-32x32.png";
           localStorage.setItem('theme','light');
      }
 })

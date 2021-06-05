@@ -9,7 +9,7 @@
     --color-dp8: rgb(49, 49, 49);
     --color-dp12: rgb(53, 53, 53);
     --color-dp16: rgb(56, 56, 56);
-    --color-dp24: rgb(58, 59, 59);
+    --color-dp24: rgb(58, 59, 59);    
     --color-text: #a0a0a0;
     --color-text-secondary: #a0a0a0;
     --color-white: #fff;
@@ -130,6 +130,22 @@ body {
 }
 
 [data-theme='dark'] hr {
+    color: var(--text-color-secondary) !important;
+}
+
+[data-theme='dark'] #banner {
+    color: var(--primary-dark) !important;
+}
+
+[data-theme='dark'] #copyright {
+    color: var(--text-color-secondary) !important;
+}
+
+[data-theme='dark'] .navbar-brand {
+    color: var(--text-color-secondary) !important;
+}
+
+[data-theme='dark'] .nav-link {
     color: var(--text-color-secondary) !important;
 }
 
