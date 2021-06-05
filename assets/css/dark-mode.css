@@ -162,6 +162,11 @@ body {
     color: var(--color-text-secondary) !important;
 }
 
+[data-theme='dark'] .form-select {    
+    background-color: var(--color-dp0) !important;  
+    color: var(--color-text-secondary) !important;
+}
+
 /* 
 Bootstrap */
 [data-theme='dark'] .alert {
