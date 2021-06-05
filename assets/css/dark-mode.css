@@ -130,7 +130,7 @@ body {
 }
 
 [data-theme='dark'] hr {
-    color: var(--text-color-secondary) !important;
+    color: var(--color-text-secondary) !important;
 }
 
 [data-theme='dark'] #banner {
@@ -138,15 +138,23 @@ body {
 }
 
 [data-theme='dark'] #copyright {
-    color: var(--text-color-secondary) !important;
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme='dark'] .navbar-nav > li > .dropdown-menu {     
+    background-color: var(--color-dp0) !important;  
+}
+
+[data-theme='dark'] .navbar-nav > li > .dropdown-menu a {   
+    color: var(--color-text-secondary) !important;
 }
 
 [data-theme='dark'] .navbar-brand {
-    color: var(--text-color-secondary) !important;
+    color: var(--color-text-secondary) !important;
 }
 
 [data-theme='dark'] .nav-link {
-    color: var(--text-color-secondary) !important;
+    color: var(--color-text-secondary) !important;
 }
 
 /* 
